@@ -1,0 +1,6 @@
+[setup]
+DAQ = 'GeminiMirage' # GeminiMirage, ELINP2024, etc.
+
+[paths]
+calibs_folder = './calibs/' 
+results_folder = ./results/
