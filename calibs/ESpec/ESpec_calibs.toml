@@ -1,0 +1,50 @@
+# Calibration  files use the TOML language: https://toml.io/en/
+# Each different calibration should have it's own entry of the following format;
+# [calibration_id]
+#   notes = 'Some calibration notes'
+#   proc_file = 'OutPutFileName.pkl' # if making processed details elsewhere...
+#   start = {A Shot dictionary} # e.g. {date = 20240110, run = 'run01', shot = 0}
+#   end = {A Shot dictionary} # e.g. {date = 20240110, run = 'run01', shot = 0}
+#   ...
+
+[20241225]
+    notes = 'Initial Calibration'
+    proc_file = '20241225_calib.pkl'
+    start = {date = 20241225, run = 'run01', shot = 0}
+    end = {date = 20251231, run = 'run01', shot = 0}
+
+    roi_mm = [[0,0],[300,100]]
+    roi_MeV = [100,5000]
+    roi_mrad = [-50, 50]
+    charge = "TODO"
+
+    [20241225.transform]
+    description = "20241225 spatial calibration"
+    raw_img = '/calibrations/ESpec/20241225_espec.tiff' # can be filepath or shot dict?
+    # E.g. tpoints = [[x1_px, y1_px], [x1_mm, y1_mm], ... ]
+    tpoints = [
+        [380, 712], [0, 0],
+        [752, 761], [100, 0],
+        [1313, 811], [200, 0],
+        [1548, 850], [250, 0],
+        [319, 122], [0, 100],
+        [697, 98], [100, 100],
+        [1201, 64], [200, 100],
+        [1522, 47], [250, 100]
+        ]
+    img_size_t = [300,100]
+    offsets = [0,0]
+    e_offsets = [0,0] # if displacement doesn't start at zero point on lanex, some shift off, can define here?
+    img_size_px = [2000,1000]
+    notes = ""   
+
+    [20241225.dispersion]
+    filename = "Disp_20241225_screen_m_E_MeV.csv"
+    spatial_units = "m"
+    spectral_units = "MeV"
+    axis = "x"
+
+    [20241225.divergence]
+    # TODO: Allow this to be a function of pixel
+    mm_to_screen = 1000 
+    axis = "y"
