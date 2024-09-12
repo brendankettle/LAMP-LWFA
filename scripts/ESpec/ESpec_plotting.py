@@ -21,3 +21,6 @@ fig, ax = ESpecHigh.plot_proc_shot(eg_shot, debug=True)
 #ax.set_xlim([100,2000])
 #ax.set_ylim([-50,50])
 plt.tight_layout()
+
+# -----------------------------------------------------------------------------
+plt.show(block=True)
