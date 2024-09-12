@@ -1,0 +1,8 @@
+[ESpec]
+type = 'ESpec'
+data_folder = '/' 
+data_stem = '' 
+data_type = 'image'
+data_ext = 'tif'
+calib_subfolder = './ESpec/' # optional
+calib_file = 'ESpec_calibs.toml'
