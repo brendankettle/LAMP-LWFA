@@ -1,5 +1,5 @@
 [ESpec]
-on_startup = True
+on_startup = true
 type = 'ESpec'
 data_folder = '/ESpec/' 
 data_stem = '' 
