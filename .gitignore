@@ -165,10 +165,9 @@ cython_debug/
 .DS_Store
 
 # ignore users own config file (template file should be updated with any changes in structure)
-local.toml
-
+/local.toml
 # ignore local analysis folder and archived stuff
-local/
-archive/
+/local/
+/archive/
 # LAMP development
-LAMP/
+/LAMP/
