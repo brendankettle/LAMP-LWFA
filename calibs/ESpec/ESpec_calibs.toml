@@ -13,11 +13,6 @@
     start = {date = 20241225, run = 'run01', shot = 0}
     end = {date = 20251231, run = 'run01', shot = 0}
 
-    roi_mm = [[0,0],[300,100]]
-    roi_MeV = [100,5000]
-    roi_mrad = [-50, 50]
-    charge = "TODO"
-
     [20241225.transform]
     description = "20241225 spatial calibration"
     raw_img = '/calibrations/ESpec/20241225_espec.tiff' # can be filepath or shot dict?
