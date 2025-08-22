@@ -1,6 +1,8 @@
 [setup]
-DAQ = 'GeminiMirage' # GeminiMirage, ELINP2024, etc.
+DAQ = 'GeminiMirage' # GeminiMirage, APOLLO?, ELINP2024, etc. If it's a filename, user defined?
 
 [paths]
 calibs_folder = './calibs/' 
-results_folder = ./results/
+results_folder = './results/'
+user_diagnostics = 'diagnostics.' # this is as per python moadule loading. So '.' for folders...
+#user_DAQs = 'DAQs.'  # this is as per python moadule loading. So '.' for folders...
