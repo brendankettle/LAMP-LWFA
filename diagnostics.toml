@@ -1,6 +1,7 @@
 [ESpec]
+on_startup = True
 type = 'ESpec'
-data_folder = '/' 
+data_folder = '/ESpec/' 
 data_stem = '' 
 data_type = 'image'
 data_ext = 'tif'
